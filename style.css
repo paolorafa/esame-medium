@@ -48,7 +48,6 @@ body{
     background-color: white;
     width: 20px;
     height: auto;
-    background-color: rgb(254, 171, 15);
     color: white;
     padding: 0.5em;
     text-align: center;
@@ -58,21 +57,18 @@ body{
 
 #main{
     background: rgb(1,1,1);
-background: linear-gradient(172deg, rgba(1,1,1,0.09427521008403361) 2%, rgba(255,255,255,0) 100%);
-    height: 100vh;
+    background: linear-gradient(172deg, rgba(1,1,1,0.09427521008403361) 2%, rgba(255,255,255,0) 100%);
     display: flex;
 }
 
 /*corpo del blocco di sinistra della pagina*/
 #blocco-1{
-    background-color: yellow;
-    width: 60%;
-    height: 100vh;
+    width: 80%;
 }
 
 .link-nav{
     margin-top: 40px;
-    margin-left: 28px;
+    margin-left: 70px;
 }
 
 .link-nav a{
@@ -80,33 +76,115 @@ background: linear-gradient(172deg, rgba(1,1,1,0.09427521008403361) 2%, rgba(255
     margin-left: 15px;
 }
 
-.l-n{
-    margin-right: 40px;
-    margin-left: 15px;
+.b-1{
+    margin-right: 80px;
+    margin-left: 70px;
+    opacity: 0.4;
 }
-
 
 .contenitore-pagine{
-    background-color: goldenrod;
+   /* background-color: goldenrod;*/
     width: auto;
-    height: 50%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    /*border: 2px solid rgb(131, 96, 211);*/
+    padding: 0;
+    }
 
+.testo-principale h2 a{
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
 }
 
 
+.testo-principale a:nth-child(2){
+    opacity: 0.7;
+    text-decoration: none;
+    color: black;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
 
+.testata-pagine{
+    /*border: 2px solid black;*/
+    width: 70%;
+    margin-left: 70px;
+}
+
+.intestazione{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.icona-img{
+    border-radius: 50%;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.img-blocco1 img{
+   width: 300px;
+   height: 200px;
+   /*background-color: blue;*/
+   margin-left: 20px;
+   margin-right: 80px;
+   object-fit: cover;
+}
+
+.sotto-paragrafo{
+    /*border: solid 1px rgba(7, 7, 7, 0.6);*/
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.s-p span{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(218, 205, 205);
+    border-radius: 20px;
+    padding: 5px;
+    opacity: 0.8;
+}
+
+.s-p p{
+    opacity: 0.6;
+}
+
+.s-i{
+    display: flex;
+}
+
+.s-i span{
+    margin-right: 15px;
+    font-size: 25px;
+}
 
 
 /*corpo del blocco di destra della pagina*/
 #blocco-2{
     /*background-color: red;*/
-    width: 40%;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    border-left: 1px solid black 0.8;
+    width: auto;
+    height: auto;
+    border-left: 2px solid black;
+    box-sizing: inherit;
 }
-.contenitore-connettività{
+.fisso{
+    position: -webkit-sticky;
+  position: sticky;
+  top:0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: yellow;
+}
+
+.contenitore-connettivita{
     /*background-color: blue;*/
     margin-top: 30px;
 }
@@ -125,52 +203,150 @@ background: linear-gradient(172deg, rgba(1,1,1,0.09427521008403361) 2%, rgba(255
     font-size: 25px;
 }
 
-.c-p p:nth-child(2){
-    border: 2px solid blacks;
+.c-p button:nth-child(2){
     background-color: white;
-    width: 40%;
     padding: 15px;
+    width: 35%;
+    border: none;
     border-radius: 20px;
-}
-.c-p p:nth-child(1){
-   word-wrap: break-word;
-}
+    font-size: 15px;
+    }
 
 .c-p {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:center;
   margin: 5px;
 }
 
-.link-contenitore p{
-    margin-left: 15px;
+.c-p p:nth-child(1){
     font-size: 20px;
+    text-align: center;
+    word-wrap: break-word;
+    width: 70%;
+    }
+
+
+.link-contenitore p{
+    display: inline-block;
+    margin-left: 15%;
+    font-size: 20px;
+    margin-bottom: 5%;
 }
 
 .hr-b2{
     margin-top: 40px;
-    width: 50%;
+    margin-bottom: 30px;
+    width: 70%;
+    opacity: 0.4;
+}
+
+.link-consigliati{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin-left: 15%;
 }
 
 .link-consigliati span{
     border: 2px solid blacks;
     background-color: rgb(230, 230, 230);
     width: auto;
-    padding: 15px;
+    padding: 10px;
     border-radius: 20px;
     margin: 5px;
-    font-size: 15px;
+    font-size: 17px;
 }
 
-.link-consigliati{
+.contenitore-follower{
+    margin-top: 15%;
+}
+
+.contenitore-follower p{
+    margin-left: 15%;
+    font-size: 20px;
+}
+
+.follower{
     display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    /*background-color: green;*/
 }
 
 
+.blocco-follow img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    object-fit:cover;
+}
+.nome-follow{
+    display: flex;
+    align-items: center;
+    /*background-color: brown;*/
+}
+
+.professione{
+   display: flex;
+   flex-direction: column;
+   width: 70%;
+}
 
 
+.professione span:nth-child(1){
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10px;
+}
+.professione span:nth-child(2){
+    margin-top: 5px;
+    font-size: 14px;
+    opacity: 0.7;
+    text-align: left;
+    margin-left: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
 
+}
+.follow-button{
+    /*background-color: rgb(0, 255, 30);*/
+    width: 10%;
+    margin-bottom: 10%;
+}
+
+.follow-button button{
+    background-color: white;
+    padding: 13px;
+    border-radius: 30px;
+    font-size: 15px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+
+.salvataggi{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.salvataggi h2 a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.contenitore-salvataggi p{
+    margin-left: 15%;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 10%;
+}
