@@ -6,6 +6,8 @@ body{
 }
 
 /*intestazione*/
+
+
 .barra-principale{
     display: flex;
     align-items: center;
@@ -18,6 +20,10 @@ body{
     display: flex;
     height: 5vh;
     align-items: center;
+}
+.contenitore-icone a{
+    text-decoration: none;
+    color: black;
 }
 .icone{
     display: flex;
@@ -56,8 +62,8 @@ body{
 /*corpo principale*/
 
 #main{
-    background: rgb(1,1,1);
-    background: linear-gradient(172deg, rgba(1,1,1,0.09427521008403361) 2%, rgba(255,255,255,0) 100%);
+    background: rgb(214,211,211);
+    background: linear-gradient(180deg, rgba(214,211,211,0.5116421568627452) 0%, rgba(193,193,193,0.055059523809523836) 3%, rgba(0,0,0,0) 100%);
     display: flex;
 }
 
@@ -74,6 +80,8 @@ body{
 .link-nav a{
     text-decoration: none;
     margin-left: 15px;
+    color: black;
+    opacity: 0.7;
 }
 
 .b-1{
@@ -124,6 +132,7 @@ body{
 }
 .icona-img{
     border-radius: 50%;
+    width: 25px;
     height: 25px;
     margin-right: 5px;
 }
@@ -146,7 +155,7 @@ body{
 .s-p span{
     width: 10px;
     height: 10px;
-    background-color: rgb(218, 205, 205);
+    background-color:#c2c2c288;
     border-radius: 20px;
     padding: 5px;
     opacity: 0.8;
@@ -169,19 +178,15 @@ body{
 /*corpo del blocco di destra della pagina*/
 #blocco-2{
     /*background-color: red;*/
-    width: auto;
-    height: auto;
-    border-left: 2px solid black;
+   border-left: 2px solid rgba(214, 211, 211, 0.5);
     box-sizing: inherit;
 }
-.fisso{
+
+#fisso{
     position: -webkit-sticky;
-  position: sticky;
-  top:0;
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  background-color: yellow;
+    position: sticky;
+    height: 10px;
+    top: -85%;
 }
 
 .contenitore-connettivita{
@@ -216,7 +221,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items:center;
-  margin: 5px;
+  margin: 5%;
 }
 
 .c-p p:nth-child(1){
@@ -247,6 +252,10 @@ body{
     justify-content:flex-start;
     margin-left: 15%;
 }
+.link-consigliati a{
+    text-decoration: none;
+    color: black;
+}
 
 .link-consigliati span{
     border: 2px solid blacks;
@@ -259,7 +268,7 @@ body{
 }
 
 .contenitore-follower{
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .contenitore-follower p{
@@ -349,4 +358,44 @@ body{
     font-size: 20px;
     margin-bottom: 0;
     margin-top: 10%;
+}
+
+.titolo-intestazione span{
+    opacity: 0.7;
+}
+
+.interazione{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.interazione span{
+    margin-top: 3%;
+}
+
+.interazione a{
+    color: rgb(5, 190, 5);
+}
+
+.aiuti-sito{
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-right: 20%;
+}
+.aiuti-sito ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.aiuti-sito a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+}
+
+ul li{
+    padding: 10px;
+    opacity: 0.7;
 }
